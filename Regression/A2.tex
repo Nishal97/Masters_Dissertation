@@ -1,0 +1,31 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Table A2}
+\begin{tabular}{l*{8}{c}}
+\toprule
+                &\multicolumn{1}{c}{OLS}&\multicolumn{1}{c}{0.1}&\multicolumn{1}{c}{0.2}&\multicolumn{1}{c}{0.4}&\multicolumn{1}{c}{0.5}&\multicolumn{1}{c}{0.6}&\multicolumn{1}{c}{0.8}&\multicolumn{1}{c}{0.9}\\
+\midrule
+lag\_sentiment   &    0.100\sym{**} &   0.0837         &   0.0886\sym{*}  &   0.0951\sym{**} &   0.0984\sym{**} &    0.102\sym{**} &    0.111\sym{*}  &    0.120         \\
+                & (0.0335)         & (0.0557)         & (0.0445)         & (0.0349)         & (0.0342)         & (0.0366)         & (0.0537)         & (0.0790)         \\
+\addlinespace
+Dsubmissions    &    0.191\sym{***}&    0.115\sym{***}&    0.137\sym{***}&    0.168\sym{***}&    0.183\sym{***}&    0.199\sym{***}&    0.240\sym{***}&    0.283\sym{***}\\
+                & (0.0116)         & (0.0214)         & (0.0171)         & (0.0135)         & (0.0132)         & (0.0142)         & (0.0208)         & (0.0306)         \\
+\addlinespace
+lag\_vol         &    0.873\sym{***}&    0.971\sym{***}&    0.942\sym{***}&    0.902\sym{***}&    0.883\sym{***}&    0.862\sym{***}&    0.809\sym{***}&    0.753\sym{***}\\
+                & (0.0101)         & (0.0317)         & (0.0254)         & (0.0200)         & (0.0196)         & (0.0211)         & (0.0309)         & (0.0454)         \\
+\addlinespace
+stdev\_lag       &   -1.789\sym{***}&   -3.800\sym{**} &   -3.205\sym{**} &   -2.396\sym{**} &   -1.993\sym{*}  &   -1.580         &   -0.500         &    0.650         \\
+                &  (0.220)         &  (1.367)         &  (1.093)         &  (0.859)         &  (0.841)         &  (0.902)         &  (1.322)         &  (1.947)         \\
+\addlinespace
+autocov         &    0.112\sym{***}&   0.0911\sym{***}&   0.0972\sym{***}&    0.106\sym{***}&    0.110\sym{***}&    0.114\sym{***}&    0.125\sym{***}&    0.137\sym{***}\\
+                & (0.0111)         & (0.0223)         & (0.0178)         & (0.0140)         & (0.0137)         & (0.0147)         & (0.0215)         & (0.0317)         \\
+\addlinespace
+Constant        &    2.344\sym{***}&                  &                  &                  &                  &                  &                  &                  \\
+                &  (0.177)         &                  &                  &                  &                  &                  &                  &                  \\
+\midrule
+Observations    &     2730         &     2730         &     2730         &     2730         &     2730         &     2730         &     2730         &     2730         \\
+\bottomrule
+\multicolumn{9}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{9}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+\end{table}
